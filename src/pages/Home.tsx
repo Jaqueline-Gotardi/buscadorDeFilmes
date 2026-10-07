@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
+import { Filme } from "../types/Filme"
 
 export function Home() {
 
-    const [ filmes, setFilmes ] = useState<Filmes />([])
+    const [ filmes, setFilmes ] = useState<Filme />([])
 
     useEffect(() => {
         async function buscarDados() {
