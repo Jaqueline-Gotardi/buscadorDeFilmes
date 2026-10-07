@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Filme } from "../types/Filme"
+import type { Filme } from "../types/Filme"
 
 export function Home() {
 
