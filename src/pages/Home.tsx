@@ -12,7 +12,7 @@ export function Home() {
             const ordernarFilmes = [...response].sort((a, b) => a.title.localeCompare(b.title));
             const primeirosFilmes = ordernarFilmes.slice(0, 10);
 
-            setFilmes(ordernarFilmes)
+            setFilmes(primeirosFilmes)
         }
         buscarDados()
     }, [])
