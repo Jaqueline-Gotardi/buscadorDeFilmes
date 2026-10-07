@@ -5,10 +5,13 @@ export function Home() {
     const [ filmes, setFilmes ] = useState<Filmes />([])
 
     useEffect(() => {
-
         async function buscarDados() {
             const filmes = await fetch('https://ghibliapi.vercel.app/films')
             const response = await filmes.json()
+            
+            const odernarFilmes = [...response].sort((a, b) => a.title.localeCompare(b.title))
+
+
             setFilmes(response)
         }
         buscarDados()
