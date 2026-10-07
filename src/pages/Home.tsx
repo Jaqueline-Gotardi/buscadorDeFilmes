@@ -2,14 +2,14 @@ import { useEffect, useState } from "react"
 
 export function Home() {
 
-    const [ filmes, setFilmes ] = useState<Promise />([])
+    const [ filmes, setFilmes ] = useState<Filmes />([])
 
     useEffect(() => {
-       
 
-        
-        const filmes = await fetch('https://ghibliapi.vercel.app/films')
-        const response = filmes.json()
+        async function buscarDados() {
+            const filmes = await fetch('https://ghibliapi.vercel.app/films')
+            const response = filmes.json()
+        }
     })
 
     return (
