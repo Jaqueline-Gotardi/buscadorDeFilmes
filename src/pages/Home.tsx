@@ -10,6 +10,8 @@ export function Home() {
             const filmes = await fetch('https://ghibliapi.vercel.app/films')
             const response = await filmes.json()
         }
+
+        buscarDados()
     })
 
     return (
