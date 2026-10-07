@@ -12,7 +12,7 @@ export function Home() {
         }
 
         buscarDados()
-    })
+    }, [])
 
     return (
         <main className="bg-[#faffec] min-h-screen flex justify-center">
