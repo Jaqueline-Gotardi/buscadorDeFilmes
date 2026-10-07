@@ -24,9 +24,9 @@ export function Home() {
                 
                 <div>
                     {filmes.map((filme) => (
-                        <div key={}>
-                            <h2>{}</h2>
-                            <img src={} />
+                        <div key={filme.id}>
+                            <h2>{filme.title}</h2>
+                            <img src={filme.movie_banner} />
 
                         </div>
                     ))}
