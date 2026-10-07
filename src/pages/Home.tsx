@@ -3,7 +3,7 @@ import { Filme } from "../types/Filme"
 
 export function Home() {
 
-    const [ filmes, setFilmes ] = useState<Filme />([])
+    const [ filmes, setFilmes ] = useState<Filme[]>([])
 
     useEffect(() => {
         async function buscarDados() {
