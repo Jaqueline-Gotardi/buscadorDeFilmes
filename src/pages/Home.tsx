@@ -8,7 +8,7 @@ export function Home() {
 
         async function buscarDados() {
             const filmes = await fetch('https://ghibliapi.vercel.app/films')
-            const response = filmes.json()
+            const response = await filmes.json()
         }
     })
 
