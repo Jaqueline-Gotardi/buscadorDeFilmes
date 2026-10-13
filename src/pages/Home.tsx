@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import type { Filme } from "../types/Filme"
+import { FilmeCard } from "../components/FilmeCard"
 
 export function Home() {
 
@@ -25,8 +26,9 @@ export function Home() {
                 <div className="grid grid-cols-2 gap-4 mt-4 w-[90%] mb-5">
                     {filmes.map((filme) => (
                         <div key={filme.id}>
-                            <h2 className="text-[#4b4242] font-bold">{filme.title}</h2>
-                            <img src={filme.movie_banner} alt={filme.title} className="w-full border-2 border-[#33443766] rounded-lg" />
+                            {/* <h2 className="text-[#4b4242] font-bold">{filme.title}</h2>
+                            <img src={filme.movie_banner} alt={filme.title} className="w-full border-2 border-[#33443766] rounded-lg" /> */}
+                            <FilmeCard filme={filme} />
                         </div>
                     ))}
                 </div>
