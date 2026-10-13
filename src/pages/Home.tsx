@@ -27,7 +27,6 @@ export function Home() {
                         <div key={filme.id}>
                             <h2>{filme.title}</h2>
                             <img src={filme.movie_banner} />
-
                         </div>
                     ))}
                 </div>
