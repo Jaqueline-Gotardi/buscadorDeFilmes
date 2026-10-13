@@ -26,7 +26,7 @@ export function Home() {
                     {filmes.map((filme) => (
                         <div key={filme.id}>
                             <h2 className="text-[#4b4242] font-bold">{filme.title}</h2>
-                            <img src={filme.movie_banner} />
+                            <img src={filme.movie_banner} className="w-dvh" />
                         </div>
                     ))}
                 </div>
