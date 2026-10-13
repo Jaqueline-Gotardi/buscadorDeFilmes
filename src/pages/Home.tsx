@@ -22,7 +22,7 @@ export function Home() {
         <main className="bg-[#faffec] min-h-screen flex flex-col items-center">
                 <h1 className="text-[#fc0000] font-bold text-2xl mt-4">Filmes da API Studio Ghibli</h1>
                 
-                <div className="grid grid-cols-2 gap-4 mt-4">
+                <div className="grid grid-cols-2 gap-4 mt-4 w-[90%]">
                     {filmes.map((filme) => (
                         <div key={filme.id}>
                             <h2>{filme.title}</h2>
