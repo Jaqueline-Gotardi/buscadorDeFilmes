@@ -8,7 +8,7 @@ export function Home() {
     useEffect(() => {
         async function buscarDados() {
             const filmes = await fetch('https://ghibliapi.vercel.app/films')
-            const response = await filmes.json()
+            const response: Filme[] = await filmes.json()
             
             const ordernarFilmes = [...response].sort((a, b) => a.title.localeCompare(b.title));
             const primeirosFilmes = ordernarFilmes.slice(0, 10);
