@@ -25,7 +25,7 @@ export function Home() {
                 <div className="grid grid-cols-2 gap-4 mt-4 w-[90%]">
                     {filmes.map((filme) => (
                         <div key={filme.id}>
-                            <h2>{filme.title}</h2>
+                            <h2 className="text-[#4b4242] font-bold">{filme.title}</h2>
                             <img src={filme.movie_banner} />
                         </div>
                     ))}
