@@ -1,6 +1,5 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { Link } from "react-router-dom"
 import type { Filme } from "../types/Filme"
 
 export function FilmDetails() {
