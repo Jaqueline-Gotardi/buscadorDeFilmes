@@ -19,7 +19,13 @@ export function FilmDetails() {
 
     return (
         <main>
-            <h2></h2>
+            <h2>{filme?.title}</h2>
+            <p>{filme?.description}</p>
+            <p>{filme?.director}</p>
+            <p>{filme?.producer}</p>
+            <p>{filme?.release_date}</p>
+            <p>{filme?.rt_score}</p>
+            <img src={filme?.movie_banner} alt={filme?.title} />
         </main>
     )
 }
