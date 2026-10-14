@@ -11,7 +11,10 @@ export function FilmDetails() {
         async function buscarFilme() {
             const response = await fetch(`https://ghibliapi.vercel.app/films/${id}`)
             const filme: Filme = await response.json()
+
+            setFilme(filme)
         }
+        buscarFilme()
     },[id])
 
     return (
