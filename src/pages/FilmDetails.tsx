@@ -8,7 +8,10 @@ export function FilmDetails() {
     const {id} = useParams<{id: string}>()
 
     useEffect(() => {
-
+        async function buscarFilme() {
+            const response = await fetch(`https://ghibliapi.vercel.app/films/${id}`)
+            const filme: Filme = await response.json()
+        }
     },[id])
 
     return (
