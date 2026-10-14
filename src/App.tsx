@@ -6,7 +6,12 @@ import { FilmDetails } from './pages/FilmDetails'
 function App() {
 
   return (
-      <Home />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/filme/:id' element={<FilmDetails />} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
