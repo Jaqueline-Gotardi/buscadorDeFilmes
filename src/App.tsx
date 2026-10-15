@@ -1,11 +1,17 @@
-import './globals..css'
+import './index.css'
+import { Home } from './pages/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { FilmDetails } from './pages/FilmDetails'
 
 function App() {
 
   return (
-    <>
-      
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/films/:id' element={<FilmDetails />} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
