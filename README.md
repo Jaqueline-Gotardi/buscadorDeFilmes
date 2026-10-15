@@ -1,75 +1,62 @@
-# React + TypeScript + Vite
+# 🎬 Studio Ghibli Films
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web desenvolvida com React e TypeScript que consome a API do Studio Ghibli para exibir filmes do estúdio e suas principais informações.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Listagem dos 10 primeiros filmes em ordem alfabética.
+- Exibição do título e banner de cada filme.
+- Página de detalhes com informações sobre o filme selecionado.
+- Informações como descrição, diretor, produtor, ano de lançamento e pontuação do Rotten Tomatoes.
+- Navegação entre páginas com React Router.
 
-## React Compiler
+## 🛠️ Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- React Router DOM
+- Tailwind CSS
+- Fetch API
+- Studio Ghibli API
 
-## Expanding the ESLint configuration
+## 🌐 API
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Os dados dos filmes são obtidos através da API pública do Studio Ghibli:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+[https://ghibliapi.vercel.app/films](https://ghibliapi.vercel.app/films)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Como executar o projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**1. Clone o repositório**
 
+```bash
+git clone https://github.com/Jaqueline-Gotardi/buscadorDeFilmes
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+**2. Entre na pasta do projeto**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd ApiStudioGhibli
 ```
+
+**3. Instale as dependências**
+
+```bash
+npm install
+```
+
+**4. Inicie a aplicação**
+
+```bash
+npm run dev
+```
+
+Depois, abra no navegador o endereço informado pelo terminal.
+
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido como parte dos meus estudos em React e TypeScript, com o objetivo de praticar o consumo de APIs, a tipagem de dados, a componentização e a navegação entre páginas.
+
+---
+
+Desenvolvido por [Jaqueline Gotardi](https://github.com/Jaqueline-Gotardi).
